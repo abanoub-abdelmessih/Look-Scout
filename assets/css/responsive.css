@@ -10,6 +10,7 @@
     letter-spacing: -1%;
     font-size: 3.25rem;
     line-height: 3.75rem;
+    width: 672px;
   }
   /* End Hero Section */
 
@@ -43,6 +44,42 @@
     flex-shrink: 0;
   }
   /* end blog section */
+
+  /* Start signUp section */
+  .signUp {
+    width: 48rem;
+    padding: 2.5rem 2rem;
+  }
+  .signUp .container {
+    gap: 2rem;
+  }
+  .signUp__text h4 {
+    font-size: 2rem;
+    line-height: 2.625rem;
+    letter-spacing: -0.0625rem;
+  }
+  .signUp__action {
+    width: 35.25rem;
+  }
+  .signUp__input {
+    flex-direction: row;
+    gap: 0;
+  }
+  .signUp__input input {
+    width: 29.75rem;
+    border-radius: 0;
+    border-top-left-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+  }
+  .signUp__input button {
+    border-radius: 0;
+    border-top-right-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+  }
+  .signUp__action span {
+    display: block;
+  }
+  /* end signUp section */
 }
 
 /* Desktop media */
@@ -73,10 +110,15 @@
   }
   .hero__heading .hero__desktop-text {
     display: block;
-    width: 40rem;
+    width: 36.25rem;
   }
 
   /* End Hero Section */
+
+  /* start blog section */
+  .blog {
+    order: 2;
+  }
   .blog .container {
     flex-direction: row;
     gap: 2.5rem;
@@ -102,4 +144,43 @@
     height: 7.375rem;
   }
   /* end blog section */
+
+  /* Start signUp section */
+  .signUp {
+    order: 1;
+    width: 100%;
+    padding: 4rem 0;
+    height: 17.75rem;
+  }
+  .signUp .container {
+    padding: 0 2rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7.5rem;
+  }
+  .signUp__text {
+    width: 41rem;
+    height: 9.75rem;
+    gap: 1.5rem;
+  }
+
+  .signUp__action {
+    width: 27.5rem;
+  }
+  .signUp__input {
+    width: 100%;
+    height: 4.625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .signUp__input input {
+    width: 22rem;
+  }
+  .signUp__input button {
+    width: 5.5rem;
+  }
+
+  /* end signUp section */
 }
