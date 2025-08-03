@@ -12,50 +12,48 @@
     <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
-    <!-- Start Header -->
-    <header>
-      <!-- Start Navbar -->
-      <nav class="navbar">
-        <div class="container flex align-center justify-between">
-          <a href="#">
-            <img src="assets/images/navbar-logo.svg" alt="navbar logo" />
-          </a>
-          <div
-            class="navbar__content flex align-center justify-between flex-grow"
-          >
-            <ul class="navbar__list">
-              <li><a href="#hero">Home</a></li>
-              <li><a href="#">Our Products</a></li>
-              <li>
-                <a href="#" class="dropdown__list"
-                  >Resources <i class="icon-chevron-down"></i>
-                </a>
-              </li>
-              <li><a href="#">Contacts</a></li>
-            </ul>
-            <div class="navbar__buttons">
-              <button class="btn btn-ghost">Sign Up</button>
-              <button class="btn btn-primary">Log In</button>
-            </div>
+    <!-- Start Navbar -->
+    <nav class="navbar">
+      <div class="container flex align-center justify-between">
+        <a href="#">
+          <img src="assets/images/navbar-logo.svg" alt="navbar logo" />
+        </a>
+        <div
+          class="navbar__content flex align-center justify-between flex-grow"
+        >
+          <ul class="navbar__list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#">Our Products</a></li>
+            <li>
+              <a href="#" class="dropdown__list"
+                >Resources <i class="icon-chevron-down"></i>
+              </a>
+            </li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+          <div class="navbar__buttons">
+            <button class="btn btn-ghost">Sign Up</button>
+            <button class="btn btn-primary">Log In</button>
           </div>
-          <button class="btn bars__btn"><i class="icon-bars"></i></button>
         </div>
-      </nav>
-      <!-- End Navbar -->
+        <button class="btn bars__btn"><i class="icon-bars"></i></button>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Header -->
+    <header class="hero" id="hero">
       <!-- Start Hero Section -->
-      <section class="hero" id="hero">
-        <div class="container">
-          <h4>1% OF THE INDUSTRY</h4>
-          <h1 class="hero__heading">
-            <span class="hero__mobile-text"
-              >Hype got you here. of it. Stay for best ever help.</span
-            >
-            <span class="hero__desktop-text"
-              >Hype got you here. Stay for the support.</span
-            >
-          </h1>
-        </div>
-      </section>
+      <div class="container">
+        <h4>1% OF THE INDUSTRY</h4>
+        <h1 class="hero__heading">
+          <span class="hero__mobile-text"
+            >Hype got you here. of it. Stay for best ever help.</span
+          >
+          <span class="hero__desktop-text"
+            >Hype got you here. Stay for the support.</span
+          >
+        </h1>
+      </div>
       <!-- End Hero Section -->
     </header>
     <!-- End Header -->
@@ -63,80 +61,88 @@
     <main class="flex flex-column">
       <!-- Start Blog section -->
       <section class="blog">
-        <div class="container flex flex-column">
-          <div class="blog__base main__blog">
-            <div class="blog__img main__blog-img">
+        <div class="container">
+          <!-- Main featured blog -->
+          <article class="blog-card blog-card--featured">
+            <div class="blog-card__image">
               <img
                 src="assets/images/main-blog-img.jpg"
                 alt="empty room image"
               />
             </div>
-            <div class="blog__content main__blog-content">
-              <h5>
+            <div class="blog-card__content">
+              <h3 class="blog-card__title">
                 Reach your users with new tools. Reach your users with new
                 tools. Reach your users with new tools.
-              </h5>
-              <p>
+              </h3>
+              <p class="blog-card__excerpt">
                 Efficiently unleash cross-media information without cross-media
                 value. Quickly maximize.Efficiently unleash cross-media
                 information without cross-media value. Quickly
                 maximize.Efficiently unleash cross-media.
               </p>
-              <p>25 Apr 2022</p>
+              <time class="blog-card__date">25 Apr 2022</time>
             </div>
-          </div>
-          <div class="blog__list">
-            <!-- second blog -->
-            <div class="blog__base blog__list-item">
-              <div class="blog__img">
+          </article>
+
+          <!-- Blog list -->
+          <div class="blog-list">
+            <article class="blog-card">
+              <div class="blog-card__image">
                 <img
                   src="assets/images/second-blog.jpg"
                   alt="empty room image"
                 />
               </div>
-              <div class="blog__content">
-                <h5>Reach your users with new tools</h5>
-                <p>
+              <div class="blog-card__content">
+                <h3 class="blog-card__title">
+                  Reach your users with new tools
+                </h3>
+                <p class="blog-card__excerpt">
                   Efficiently unleash cross-media information without
                   cross-media value. Quickly maximize.
                 </p>
-                <p>25 Apr 2022</p>
+                <time class="blog-card__date">25 Apr 2022</time>
               </div>
-            </div>
-            <!-- third blog -->
-            <div class="blog__base blog__list-item">
-              <div class="blog__img">
+            </article>
+
+            <article class="blog-card">
+              <div class="blog-card__image">
                 <img
                   src="assets/images/third-blod.jpg"
                   alt="empty room image"
                 />
               </div>
-              <div class="blog__content">
-                <h5>Faster ways to reach your customer</h5>
-                <p>
+              <div class="blog-card__content">
+                <h3 class="blog-card__title">
+                  Faster ways to reach your customer
+                </h3>
+                <p class="blog-card__excerpt">
                   Completely synergize resource taxing relationships via premier
                   niche markets.
                 </p>
-                <p>25 Apr 2022 - Blog theme</p>
+                <time class="blog-card__date">25 Apr 2022 - Blog theme</time>
               </div>
-            </div>
-            <!-- fourth blog -->
-            <div class="blog__base blog__list-item">
-              <div class="blog__img">
+            </article>
+
+            <article class="blog-card">
+              <div class="blog-card__image">
                 <img
                   src="assets/images/fourth-blog.jpg"
                   alt="empty room image"
                 />
               </div>
-              <div class="blog__content">
-                <h5>Revolutionizing the Design Industry</h5>
-                <p>
+              <div class="blog-card__content">
+                <h3 class="blog-card__title">
+                  Revolutionizing the Design Industry
+                </h3>
+                <p class="blog-card__excerpt">
                   Efficiently unleash cross-media information without
                   cross-media value. Quickly maximize.
                 </p>
-                <p>25 Apr 2022 - Blog theme</p>
+                <time class="blog-card__date">25 Apr 2022 - Blog theme</time>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
