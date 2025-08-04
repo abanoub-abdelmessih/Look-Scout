@@ -10,12 +10,16 @@ html {
 :root {
   /* Colors */
   --neutral-color-100: #f8f9fb;
+  --neutral-color-200: #f9f9f9;
   --neutral-color-600: #eaebf0;
+  --neutral-color-800: #a5acba;
   --base-color: #ffffff;
   --primary-color-600: #437ef7;
   --primary-color-900: #2b63d9;
   --primary-color-200: #b1ccfb;
+  --gray-950: #151b28;
   --gray-700: #272d37;
+  --gray-300: #2e3545;
   --gray-50: #5f6d7e;
 
   /* Font family */
@@ -448,3 +452,92 @@ i {
 /* end SignUp section */
 
 /* End Main */
+
+/* Start Footer */
+.footer {
+  padding: 2rem 1rem;
+  background-color: var(--gray-950);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.footer__header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer__header p {
+  color: var(--neutral-color-800);
+  line-height: 1.5rem;
+}
+.footer__input {
+  display: flex;
+  width: 100%;
+}
+.footer__input input {
+  border-top-left-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+  padding: 0.75rem 1rem;
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  background-color: var(--gray-300);
+  color: var(--neutral-color-800);
+  height: 2.875rem;
+}
+.footer__input input::placeholder {
+  color: var(--neutral-color-800);
+  font-size: 0.9375rem;
+}
+.footer__input button {
+  border-top-right-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+  width: 5.5rem;
+  height: 2.875rem;
+  padding: 0.75rem 1.125rem;
+  font-weight: var(--font-weight-semibold);
+  font-size: 0.9375rem;
+  background-color: var(--primary-color-600);
+  border: none;
+  color: var(--base-color);
+}
+.footer__links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.footer__item {
+  width: calc(50% - 0.75rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.footer__item h6 {
+  font-weight: var(--font-weight-semibold);
+  color: var(--neutral-color-200);
+  font-size: 1rem;
+}
+.footer__item ul {
+  gap: 0.75rem;
+}
+.footer__item ul li {
+  color: var(--neutral-color-800);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5rem;
+}
+.footer__rights {
+  border-top: 0.0625rem var(--gray-300) solid;
+  padding-top: 1.5rem;
+}
+.footer__rights p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--neutral-color-800);
+  text-align: center;
+}
+/* End Footer */
