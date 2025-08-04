@@ -112,6 +112,29 @@
     line-height: 1.875rem;
   }
   /* end Latest Blog */
+
+  /* start SignUp section */
+  .signUp {
+    padding: 2.5rem 2rem;
+  }
+  .signUp .container {
+    gap: 2rem;
+  }
+  .signUp .container h3 {
+    width: 43rem;
+    font-size: 2rem;
+    line-height: 2.625rem;
+  }
+  .signUp__buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .signUp__btn,
+  .login__btn {
+    width: 5.6875rem;
+  }
+
+  /* end SignUp section */
 }
 
 /* Desktop media */
@@ -122,6 +145,9 @@
   /* start Navbar */
   .navbar {
     padding: 1.25rem 10rem;
+  }
+  .navbar .container {
+    width: 100%;
   }
   .navbar__content {
     display: flex;
@@ -224,7 +250,7 @@
   /* start Latest Blog */
   .latest__blogs {
     padding: 4rem 2rem;
-    gap: 4rem;
+    gap: 3rem;
   }
 
   .latest__blogs .container {
@@ -242,5 +268,25 @@
     width: 24rem;
     height: 17.8125rem;
   }
+  .latest__blogs h3 {
+    position: relative;
+  }
+  .latest__blogs h3::after {
+    content: "";
+    display: block;
+    width: 8.625rem;
+    height: 0.3125rem;
+    background-color: #d9d9d9;
+    margin: 1rem auto 0;
+  }
   /* end Latest Blog */
+
+  /* start SignUp section */
+  .signUp {
+    padding: 4rem 2rem;
+  }
+  .login__btn {
+    display: none;
+  }
+  /* .end SignUp section */
 }
