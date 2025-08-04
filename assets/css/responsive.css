@@ -45,41 +45,73 @@
   }
   /* end blog section */
 
-  /* Start signUp section */
-  .signUp {
-    width: 48rem;
+  /* Start subscribe section */
+  .subscribe {
+    width: 100%;
     padding: 2.5rem 2rem;
   }
-  .signUp .container {
+  .subscribe .container {
     gap: 2rem;
   }
-  .signUp__text h4 {
+  .subscribe__text h4 {
     font-size: 2rem;
     line-height: 2.625rem;
     letter-spacing: -0.0625rem;
+    width: 40.625rem;
   }
-  .signUp__action {
+  .subscribe__action {
     width: 35.25rem;
   }
-  .signUp__input {
+  .subscribe__input {
     flex-direction: row;
     gap: 0;
   }
-  .signUp__input input {
+  .subscribe__input input {
     width: 29.75rem;
     border-radius: 0;
     border-top-left-radius: 0.375rem;
     border-bottom-left-radius: 0.375rem;
   }
-  .signUp__input button {
+  .subscribe__input button {
     border-radius: 0;
     border-top-right-radius: 0.375rem;
     border-bottom-right-radius: 0.375rem;
   }
-  .signUp__action span {
+  .subscribe__action span {
     display: block;
+    margin-top: 0.5rem;
   }
-  /* end signUp section */
+  /* end subscribe section */
+
+  /* start Latest Blog */
+  .latest__blogs {
+    padding: 3rem 2rem;
+    gap: 2rem;
+  }
+  .latest__blogs h3 {
+    font-weight: var(--font-weight-bold);
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .latest__blogs .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem 2rem;
+  }
+  .latest__blog--item {
+    width: calc(50% - 1rem);
+  }
+  .latest__blog--item.inActive {
+    display: none;
+  }
+  .latest__blogs--image {
+    height: 17.8125rem;
+  }
+  .latest__blogs--content h5 {
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+  }
+  /* end Latest Blog */
 }
 
 /* Desktop media */
@@ -145,42 +177,70 @@
   }
   /* end blog section */
 
-  /* Start signUp section */
-  .signUp {
+  /* Start subscribe section */
+  .subscribe {
     order: 1;
     width: 100%;
     padding: 4rem 0;
     height: 17.75rem;
   }
-  .signUp .container {
+  .subscribe .container {
     padding: 0 2rem;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: 7.5rem;
   }
-  .signUp__text {
+  .subscribe__text {
     width: 41rem;
     height: 9.75rem;
     gap: 1.5rem;
   }
-
-  .signUp__action {
+  .subscribe__text h4 {
+    width: 37.5rem;
+  }
+  .subscribe__action {
     width: 27.5rem;
   }
-  .signUp__input {
+  .subscribe__input {
     width: 100%;
     height: 4.625rem;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .signUp__input input {
+  .subscribe__input input {
     width: 22rem;
   }
-  .signUp__input button {
+  .subscribe__input button {
     width: 5.5rem;
   }
+  .subscribe__action span {
+    margin-top: 0;
+  }
 
-  /* end signUp section */
+  /* end subscribe section */
+
+  /* start Latest Blog */
+  .latest__blogs {
+    padding: 4rem 2rem;
+    gap: 4rem;
+  }
+
+  .latest__blogs .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .latest__blog--item {
+    width: calc(33% - 2rem);
+  }
+  .latest__blog--item.inActive {
+    display: flex;
+  }
+  .latest__blogs--image {
+    width: 24rem;
+    height: 17.8125rem;
+  }
+  /* end Latest Blog */
 }
